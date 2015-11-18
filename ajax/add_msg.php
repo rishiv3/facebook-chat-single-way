@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_POST['msg'])) {
-  require_once __DIR__ . '/../../core/FbChatMock.php';
+  require_once __DIR__ . '/../lib/FbChatMock.php';
   
   $userId = (int) $_SESSION['user_id'];
   // Escape the message string

@@ -1,12 +1,9 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title></title>
-    <link href="style/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="style/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     <link href="style/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />
-    <link href="style/non-responsive.css" rel="stylesheet" type="text/css" />
     <link href="style/core.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -20,7 +17,7 @@
     
     
     // Load the messages initially
-    require_once __DIR__ . '/../core/FbChatMock.php';
+    require_once __DIR__ . '/lib/FbChatMock.php';
     $chat = new FbChatMock();
     $messages = $chat->getMessages();
     ?>
