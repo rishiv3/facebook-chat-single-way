@@ -1,3 +1,5 @@
+$("body > div.container > div.msg-wgt-header > a").click(function(){$("div#msg-body").slideToggle(50);})
+
 // OOP Way
 fbChat = {
   bootChat: function() {
@@ -75,7 +77,7 @@ function get_messages() {
     success: function(data) {
       $('.msg-wgt-body').html(data);
         var height  = $("div.msg-wgt-body > table").height();
-        console.log(height);
+        //console.log(height);
       $('.msg-wgt-body').scrollTop(height);
     }
   });

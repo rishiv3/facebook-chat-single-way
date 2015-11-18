@@ -22,7 +22,12 @@
   border: 1px solid rgba(0, 39, 121, 0.76);
   color: white;
   text-align: center;
-  height: 28px;
+  height: 20px;
+}
+
+div#msg-body {
+    overflow: overlay;
+    display: none;
 }
 
 .msg-wgt-header a {
